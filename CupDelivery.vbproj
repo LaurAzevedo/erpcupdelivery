@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EBB5DD2B-F2D3-43EF-942B-5C40E60013DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CupDelivery.My.MyApplication</StartupObject>
+    <RootNamespace>CupDelivery</RootNamespace>
+    <AssemblyName>CupDelivery</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CupDelivery.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CupDelivery.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>CupDelivery.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>CupDelivery.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auth\controller\AuthController.vb" />
+    <Compile Include="Auth\model\AuthModel.vb" />
+    <Compile Include="Components\controller\GeneralController.vb" />
+    <Compile Include="Components\controller\MessageController.vb" />
+    <Compile Include="Customers\controller\CustomersController.vb" />
+    <Compile Include="Customers\model\CustomerModel.vb" />
+    <Compile Include="ErpUsers\controller\UsersController.vb" />
+    <Compile Include="ErpUsers\model\UserModel.vb" />
+    <Compile Include="Login\model\LoginModel.vb" />
+    <Compile Include="Login\controller\LoginController.vb" />
+    <Compile Include="Components\view\calendario.Designer.vb">
+      <DependentUpon>calendario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\view\calendario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\view\data_final.Designer.vb">
+      <DependentUpon>data_final.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\view\data_final.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\view\listagem_dados.Designer.vb">
+      <DependentUpon>listagem_dados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\view\listagem_dados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\txtautocomplete.Designer.vb">
+      <DependentUpon>txtautocomplete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\txtautocomplete.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\txtdata.Designer.vb">
+      <DependentUpon>txtdata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\txtdata.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\txtdecimal.Designer.vb">
+      <DependentUpon>txtdecimal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\txtdecimal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\txtnumeric.Designer.vb">
+      <DependentUpon>txtnumeric.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\txtnumeric.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login\view\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login\view\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\view\Message.Designer.vb">
+      <DependentUpon>Message.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\view\Message.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\view\MessageDetails.Designer.vb">
+      <DependentUpon>MessageDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\view\MessageDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainScreen.Designer.vb">
+      <DependentUpon>MainScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\view\WaitMessage.Designer.vb">
+      <DependentUpon>WaitMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\view\WaitMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostgreSQL\functions\PostgreSQLFunctions.vb" />
+    <Compile Include="Products\controller\ProductsController.vb" />
+    <Compile Include="Products\model\ProductModel.vb" />
+    <Compile Include="Sales\controller\SalesController.vb" />
+    <Compile Include="Sales\model\SalesModel.vb" />
+    <Compile Include="Sales\view\SaleDetails.Designer.vb">
+      <DependentUpon>SaleDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\view\SaleDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\view\SalesUpdate.Designer.vb">
+      <DependentUpon>SalesUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\view\SalesUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\view\Sales.Designer.vb">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\view\Sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\view\Customers.Designer.vb">
+      <DependentUpon>Customers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\view\Customers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\view\Products.Designer.vb">
+      <DependentUpon>Products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Products\view\Products.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostgreSQL\controller\PostgreSQLController.vb" />
+    <Compile Include="Models\GlobalVariables.vb" />
+    <Compile Include="ErpUsers\view\Users.Designer.vb">
+      <DependentUpon>Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ErpUsers\view\Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Components\view\calendario.resx">
+      <DependentUpon>calendario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\view\data_final.resx">
+      <DependentUpon>data_final.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\view\listagem_dados.resx">
+      <DependentUpon>listagem_dados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\txtautocomplete.resx">
+      <DependentUpon>txtautocomplete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\txtdata.resx">
+      <DependentUpon>txtdata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\txtdecimal.resx">
+      <DependentUpon>txtdecimal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\txtnumeric.resx">
+      <DependentUpon>txtnumeric.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\view\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\view\Message.resx">
+      <DependentUpon>Message.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\view\MessageDetails.resx">
+      <DependentUpon>MessageDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\view\WaitMessage.resx">
+      <DependentUpon>WaitMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\view\SaleDetails.resx">
+      <DependentUpon>SaleDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\view\SalesUpdate.resx">
+      <DependentUpon>SalesUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\view\Sales.resx">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\view\Customers.resx">
+      <DependentUpon>Customers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\view\Products.resx">
+      <DependentUpon>Products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErpUsers\view\Users.resx">
+      <DependentUpon>Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Office.Interop.Excel">
+      <Version>15.0.4795.1000</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Npgsql">
+      <Version>6.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logomarca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
