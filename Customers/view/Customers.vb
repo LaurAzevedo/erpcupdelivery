@@ -404,6 +404,11 @@ Public Class Customers
             Return False
         End If
 
+        If ValidateCpf(txtCpf.Text) = False Then
+            BOX_MESSAGEM("ATENCAO", "OK", "O CPF " & txtCpf.Text & " informado é inválido, informe um CPF válido")
+            Return False
+        End If
+
         Return True
 
     End Function
